@@ -1,0 +1,32 @@
+" Enable editor features
+set number
+syntax on
+
+" Change tab settings
+set tabstop=4 " How many spaces per <tab> character
+set shiftwidth=4 " How many spaces to delete
+set expandtab " Change <tab> key to tabstop spaces
+
+" Change escape key in insert mode
+inoremap jj <ESC>
+
+" Enable auto-closing curly braces
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+" Disable arrow keys in normal, visual and operator pending mode
+map <up> <nop> 
+map <down> <nop> 
+map <left> <nop> 
+map <right> <nop> 
+
+" Disable arrow keys in insert mode 
+imap <up> <nop> 
+imap <down> <nop> 
+imap <left> <nop> 
+imap <right> <nop>
+
+" Disable mouse in insert mode
+set mouse=n
+
